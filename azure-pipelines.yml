@@ -1,10 +1,5 @@
 ### YamlMime:Yaml
-ms.openlocfilehash: 2c6fce0aa3fd82462160c0a5e5c0602da0f98a6b
-ms.sourcegitcommit: ac2ef45a787885996570376b660e03e9f559531d
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "109936518"
+
 trigger:
 - '*'
 pool:
@@ -14,7 +9,7 @@ pool:
 variables:
   buildConfiguration: Release
   wwwrootDir: Tailspin.SpaceGame.Web/wwwroot
-  dotnetSdkVersion: 3.1.300
+  dotnetSdkVersion: 5.0.301
 steps:
 - task: UseDotNet@2
   displayName: Use .NET Core SDK $(dotnetSdkVersion)
